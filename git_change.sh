@@ -6,7 +6,7 @@
 
 bom_sniffer() { 
   # exit code is 1 if character not found
-  head -c3 "$1" | LC_ALL=C grep -qP '\xef\xbb\xbf'; 
+  head -c3 "$1" | LC_ALL=C grep -qE '\xef\xbb\xbf'; 
   if [ $? -eq 0 ] 
   then 
     echo "BOM SNIFFER DETECTED BOM CHARACTER IN FILE \"$1\""
