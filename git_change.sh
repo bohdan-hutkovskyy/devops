@@ -26,9 +26,9 @@ done
 echo ${APP_ARRAY[@]}
 
 #Remove Duplicates
-APP_ARRAY=($(echo ${APP_ARRAY[@]} | tr ' ' '\n' | sort -nu))
+APP_ARRAY=($(printf '%s\n' "${APP_ARRAY[@]}" | sort -u))
+echo ${APP_ARRAY[@]}
 
-echo $APP_ARRAY
 # array=("item 1" "item 2" "item 3")
 # for i in "${array[@]}"; do   # The quotes are necessary here
 #     echo "$i"
