@@ -9,3 +9,10 @@ COPY zagreus.pex /zagreus.pex
 EXPOSE 8000
 
 CMD /zagreus.pex
+
+
+CMD /zagreus.pex
+
+CMD /zagreus.pex
+
+CMD /zagreus.pex
